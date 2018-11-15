@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [ShowSingletonController.cs](./CS/HowToImplementSingleton.Module/ShowSingletonController.cs) (VB: [ShowSingletonController.vb](./VB/HowToImplementSingleton.Module/ShowSingletonController.vb))
+* [Singleton.cs](./CS/HowToImplementSingleton.Module/Singleton.cs) (VB: [Singleton.vb](./VB/HowToImplementSingleton.Module/Singleton.vb))
+<!-- default file list end -->
 # How to Implement a Singleton class
 
 
