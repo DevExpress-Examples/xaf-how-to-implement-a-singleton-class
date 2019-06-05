@@ -19,7 +19,7 @@ namespace HowToImplementSingleton.Module {
             showSingletonAction.CustomizePopupWindowParams += showSingletonAction_CustomizePopupWindowParams;
 		}
         private void showSingletonAction_CustomizePopupWindowParams(object sender, CustomizePopupWindowParamsEventArgs e) {
-			IObjectSpace objectSpace = Application.CreateObjectSpace();
+			IObjectSpace objectSpace = Application.CreateObjectSpace(typeof(Singleton));
             DetailView detailView = Application.CreateDetailView(objectSpace, objectSpace.GetObjects<Singleton>()[0]);
             detailView.ViewEditMode = ViewEditMode.Edit;
             e.View = detailView;

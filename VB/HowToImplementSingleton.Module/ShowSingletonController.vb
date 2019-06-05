@@ -20,7 +20,7 @@ Namespace HowToImplementSingleton.Module
             AddHandler showSingletonAction.CustomizePopupWindowParams, AddressOf showSingletonAction_CustomizePopupWindowParams
         End Sub
         Private Sub showSingletonAction_CustomizePopupWindowParams(ByVal sender As Object, ByVal e As CustomizePopupWindowParamsEventArgs)
-            Dim objectSpace As IObjectSpace = Application.CreateObjectSpace()
+            Dim objectSpace As IObjectSpace = Application.CreateObjectSpace(GetType(Singleton))
             Dim detailView As DetailView = Application.CreateDetailView(objectSpace, objectSpace.GetObjects(Of Singleton)()(0))
             detailView.ViewEditMode = ViewEditMode.Edit
             e.View = detailView
