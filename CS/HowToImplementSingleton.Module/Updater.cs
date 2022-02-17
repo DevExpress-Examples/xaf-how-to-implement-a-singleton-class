@@ -14,7 +14,9 @@ namespace HowToImplementSingleton.Module {
 			base.UpdateDatabaseAfterUpdateSchema();
 			//Create the Singleton object
 			if (ObjectSpace.GetObjectsCount(typeof(Singleton), null) == 0) {
-				ObjectSpace.CreateObject<Singleton>();
+				Singleton singleton = ObjectSpace.CreateObject<Singleton>();
+				singleton.Name = "My Singleton";
+				singleton.Description = "Sample Description";
 			}
 			ObjectSpace.CommitChanges();
 		}

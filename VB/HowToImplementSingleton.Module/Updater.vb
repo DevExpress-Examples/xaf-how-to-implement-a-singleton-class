@@ -18,7 +18,9 @@ Namespace HowToImplementSingleton.Module
             MyBase.UpdateDatabaseAfterUpdateSchema()
             'Create the Singleton object
             If ObjectSpace.GetObjectsCount(GetType(Singleton), Nothing) = 0 Then
-                ObjectSpace.CreateObject(Of Singleton)()
+                Dim _singleton As Singleton = ObjectSpace.CreateObject(Of Singleton)()
+                _singleton.Name = "My Singleton"
+                _singleton.Description = "Sample Description"
             End If
             ObjectSpace.CommitChanges()
         End Sub
