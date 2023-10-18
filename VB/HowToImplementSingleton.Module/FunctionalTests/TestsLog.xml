@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<Tests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Date="6/26/2012">
-  <Test Name="SingletonNavigation" ApplicationName="HowToImplementSingleton.Win" Result="Passed" Elapsed="00:00:06.8856885" Started="13:05:08.9466191" MachineName="BELYAKOV-SV" IP="172.22.0.172" />
-  <Test Name="SingletonNavigation" ApplicationName="HowToImplementSingleton.Web" Result="Passed" Elapsed="00:00:12.4822481" Started="13:05:15.8353079" MachineName="BELYAKOV-SV" IP="172.22.0.172" />
-</Tests>
