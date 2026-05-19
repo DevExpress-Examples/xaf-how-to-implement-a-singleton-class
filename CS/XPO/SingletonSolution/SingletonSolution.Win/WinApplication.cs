@@ -14,7 +14,6 @@ public class SingletonSolutionWindowsFormsApplication : WinApplication {
 		SplashScreen = new DXSplashScreen(typeof(XafSplashScreen), new DefaultOverlayFormOptions());
         ApplicationName = "SingletonSolution";
         CheckCompatibilityType = DevExpress.ExpressApp.CheckCompatibilityType.DatabaseSchema;
-        UseOldTemplates = false;
         DatabaseVersionMismatch += SingletonSolutionWindowsFormsApplication_DatabaseVersionMismatch;
         CustomizeLanguagesList += SingletonSolutionWindowsFormsApplication_CustomizeLanguagesList;
     }
